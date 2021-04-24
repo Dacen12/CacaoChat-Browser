@@ -8,22 +8,15 @@ ul{
     list-style: none;
 }
 
-#canvas{
-    box-shadow: 3px 3px 3px;
-    position: absolute;
-    left: 200px;
-    top: 50px;
+
+#wrapper{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1500px;
 }
 
-#leftGutter{
-    position: absolute;
-    background:teal;
-    box-shadow: 2px 2px 2px;
-    width: 150px;
-    height: 900px;
-    top: 50px;
-    left: 20px;
-}
+
+
 
 #submitText{
     width: 750px;
@@ -147,10 +140,19 @@ ul{
 
 .index{
     left: 44%;
-    top: 30%;
+    top: 10%;
 }
 
 .chatroom{
     left: 42%;
     top: 4%;
+}
+
+.logo{
+    width: 120px;
+    height: 200px;
+    position: relative;
+    top: 155px;
+    left: 690px;
+
 }

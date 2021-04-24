@@ -4,16 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simply Chat</title>
+    <title>CacaoChat</title>
+    <link rel="icon" href="favicon.ico"  sizes="32x32" type="image/png">
     <link href="./style/style.css" rel="stylesheet" type="text/css">
+
 </head>
 <body>
-    <p class="brand index">SimplyChat</p>
+    <div id="wrapper">
+    <p class="brand index">CacaoChat</p>
+    <img src="cacaochat_logo.png" draggable="false" class="logo">
     <form action="chatroom.html">
    <input type="text" id="join" class="room" name="room" placeholder="Create a Room!" required autocomplete="off">
    <input type="text" id="name"  class="username"name="username" placeholder="Choose your name" required autocomplete="off">
    <button type="submit"  class="submit"id="submit">Join</button>
 </form>
+</div>
 </body>
 
 <script defer src="https://cdn.socket.io/4.0.1/socket.io.min.js" integrity="sha384-LzhRnpGmQP+lOvWruF/lgkcqD+WDVt9fU3H4BWmwP5u5LTmkUGafMcpZKNObVMLU" crossorigin="anonymous"></script>

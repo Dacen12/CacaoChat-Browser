@@ -1,13 +1,12 @@
 {
-  "name": "socket",
+  "name": "CacaoChat",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
   "scripts": {
     "start": "nodemon app.js",
     "watch": "watchify client/back.js -o client/browser.js",
-    "watchHome": "watchify ./client/homepage/begin.js -o ./client/homepage/bundle.js",
-    "draw": "watchify ./client/functions/Draw.js -o ./client/homepage/bundle.js"
+    "watchHome": "watchify ./client/homepage/begin.js -o ./client/homepage/bundle.js"
   },
   "keywords": [],
   "author": "",
