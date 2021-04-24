@@ -10,7 +10,7 @@ const socket = require('socket.io')(server)
 const {joinUserToRoom} = require('./client/class/User')
 
 app.use(express.json())
-
+console.log("updated version!")
 socket.on("connection", socket => {
 
         socket.on('MobileRoomJoined', (username, mobile_room) => {
@@ -42,8 +42,7 @@ socket.on("connection", socket => {
 
 app.use(express.static(path.join(__dirname, '/client/'), {index: 'index.html'}))
 
-server.listen(3000, () => {
-    console.log('listening on port 3000')
+server.listen(process.env.PORT || 3000,  () => {
+    console.log('listening on port ' + process.env.PORT)
 })
 
-//Sent: {"event":"roomJoined","data":{"username":"hii","room":"hii"}}
