@@ -1,0 +1,24 @@
+{
+  "name": "socket",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "watch": "watchify client/back.js -o client/browser.js",
+    "watchHome": "watchify ./client/homepage/begin.js -o ./client/homepage/bundle.js",
+    "draw": "watchify ./client/functions/Draw.js -o ./client/homepage/bundle.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browserify": "^17.0.0",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7",
+    "qs": "^6.10.1",
+    "socket.io": "^4.0.1",
+    "socket.io-client": "^4.0.1",
+    "watchify": "^4.0.0"
+  }
+}

@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+#canvas{
+    box-shadow: 3px 3px 3px;
+    position: absolute;
+    left: 200px;
+    top: 50px;
+}
+
+#leftGutter{
+    position: absolute;
+    background:teal;
+    box-shadow: 2px 2px 2px;
+    width: 150px;
+    height: 900px;
+    top: 50px;
+    left: 20px;
+}
+
+#submitText{
+    width: 750px;
+    height: 50px;
+    bottom: 155px;
+    position: absolute;
+    left : 550px;
+    font-size: 20px;
+   
+    background-color: transparent;
+    border-color: transparent;
+    box-shadow: 1px 2px 3px;
+    border-radius: 50px;
+    padding: 5px;
+    outline: none
+    
+}
+
+#chatScreen{
+    position: absolute;
+    box-shadow: 1px 2px 3px;
+    width: 750px;
+    height: 40px;
+    border-radius: 50px;
+    height: 550px;
+    left: 550px;
+    top: 150px
+
+}
+
+#send{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 775px;
+    left: 69%;
+    
+}
+
+
+#send:focus{
+    outline: none;
+}
+.chatScreen{
+    padding-left: 50px;
+    padding-top: 20px;
+    overflow-y: scroll;
+    overflow: hidden;
+}
+
+.messageBox{
+    padding-left: 25px ;
+    padding-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 10px;
+    box-shadow: 1px 2px 3px;
+    width: auto;
+   height: auto;
+   max-width: 250px;
+    border-radius: 50px;
+    margin-bottom: 20px;
+}
+.chatScreen:hover{
+    overflow-y: auto;
+}
+
+
+.room{
+    width: 250px;
+    height: 50px;
+    position: absolute;
+    left: 44%;
+    top: 50%;
+    border: hidden;
+    font-size: 25px;
+    box-shadow: 1px 2px 3px;
+    border-radius: 50px;
+    
+    text-align: center;
+}
+
+.username{
+    width: 250px;
+    height: 50px;
+    position: absolute;
+    left: 44%;
+    border: hidden;
+    box-shadow: 1px 2px 3px;
+    border-radius: 50px;
+    font-size: 25px;
+    top: 40%;
+    text-align: center;
+}
+
+.submit{
+    position: absolute;
+    background: transparent;
+    border: hidden;
+    box-shadow: 1px 2px 3px;
+    width: 250px;
+    height: 50px;
+    border-radius: 50px;
+    font-size: 25px;
+    top: 65%;
+    left: 44%;
+}
+
+.room:focus{
+    outline: none;
+}
+.username:focus{
+    outline: none;
+}
+
+.brand{
+   font-family: fantasy;
+   position: absolute;
+    font-size: 45px;
+   
+}
+
+.index{
+    left: 44%;
+    top: 30%;
+}
+
+.chatroom{
+    left: 42%;
+    top: 4%;
+}
