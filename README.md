@@ -26,4 +26,4 @@ This means that for both  `client.js`  and  `begin.js`  the code won't automatic
  
  <h3>✔️ Finally </h3>
  
- To run the application, simply type `npm run start` in the terminal to start the applicication.
+ To run the application, simply type `npm run start` in the terminal to start the application.
