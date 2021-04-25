@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "start": "nodemon app.js",
-    "watch": "watchify client/back.js -o client/browser.js",
+    "watch": "watchify client/client.js -o client/browser.js",
     "watchHome": "watchify ./client/homepage/begin.js -o ./client/homepage/bundle.js"
   },
   "keywords": [],

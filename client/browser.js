@@ -13,31 +13,29 @@ const {room, username} = require('qs').parse(location.search, {
 })
  
 
-ioClient.emit('roomJoined', {username, room})
+ioClient.emit('roomJoined', (username, room) )
 
 
 form.addEventListener('submit', (e) => {
     e.preventDefault()
     var message = submitText.value
     
-    ioClient.emit('messageToOthers', {username, message})
-    var refactorToUser = {
-        username: username,
-        message: message
-    }
-    addMessage(refactorToUser)
+    ioClient.emit('messageToOthers', (username, message))
+   
+    addMessage(username , message)
     submitText.value = ""
 })
 
 
-ioClient.on('receivedMessage', messageFromUser => {
-   addMessage(messageFromUser)
+ioClient.on('receivedMessage', ({mobile_username}, message) => {
+   
+   addMessage(mobile_username, message)
 })
-
+ 
 // adds received message to dom
-function addMessage(messageFromUser){
+function addMessage(username, message){
     var addLi = document.createElement('li')
-    addLi.innerText = `${messageFromUser.username} : ${messageFromUser.message}`
+    addLi.innerText = `${username} : ${message}`
     addLi.classList.add('messageBox')
     ulList.appendChild(addLi)
     chatScreen.scrollTop = chatScreen.scrollHeight;
