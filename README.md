@@ -20,7 +20,7 @@ This means that for both  `client.js`  and  `begin.js`  the code won't automatic
 
 ✅ If you would like to make changes to the client side javascript type `npm run watch` to automatically update the `client.js` file (Actual code for the chatroom)
 
-✅ And `npm run watchHome` to automatically update changes when you apply new code to `begin.js` (Start screen of the applicaiton)
+✅ And `npm run watchHome` to automatically update changes when you apply new code to `begin.js` (Start screen of the application)
 
  - - - - - 
  
